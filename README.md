@@ -7,7 +7,7 @@ This project is part of Udacity's Sensor Fusion Course.
 
 **1. Downsampling** - Downsample the point cloud to reduce computation.
 
-**2. Segmentation** - Detect the major plane i.e. road surg=face using RANSAC.
+**2. Segmentation** - Detect the major plane i.e. road surface using RANSAC.
 
 **3. Clustering** - Cluster the individual object point clouds together. 
 
