@@ -188,7 +188,7 @@ int main(int argc, char **argv)
     // city_block(viewer);
 
     ProcessPointClouds<pcl::PointXYZI>* pointProcessorI = new ProcessPointClouds<pcl::PointXYZI>();
-    std::vector<boost::filesystem::path> stream = pointProcessorI->streamPcd("../src/sensors/data/pcd/data_1");
+    std::vector<boost::filesystem::path> stream = pointProcessorI->streamPcd("../src/sensors/data/pcd/data_2");
     auto streamIterator = stream.begin();
     pcl::PointCloud<pcl::PointXYZI>::Ptr inputCloudI;
     // city_block2(viewer, pointProcessorI, inputCloudI);
@@ -213,5 +213,6 @@ int main(int argc, char **argv)
             streamIterator = stream.begin();
 
         viewer->spinOnce ();
+
     }
 }
